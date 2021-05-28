@@ -69,21 +69,3 @@ class GridIndexForNodes(GridIndex):
 
         res.sort(key=takeFirst)
         return res[:k]
-
-
-# class GridIndexForEdges(GridIndex):
-#     def __int__(self):
-#         super(GridIndexForEdges, self).__int__()
-#         self.grids = [[] for _ in range(self.num_columns * self.num_rows)]
-#
-#     def buildIndex(self,edges):
-#         for edge in edges:
-#             for index in self.findCoveringGrids(edge.start, edge.end):
-#                 self.grids[index].append(edge)
-#
-#     def knn(self, node, k):
-#         centerX = node.x
-#         centerY = node.Y
-#
-#         node1 = Node()
-#         pass

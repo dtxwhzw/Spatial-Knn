@@ -26,29 +26,6 @@ class Node:
         return self.id == other.id
 
 
-# class Edge:
-#     """
-#     This class represent the edge between each nodes
-#     (x1,y1) -> (x2,y2)
-#     """
-#     def __int__(self,id, start,end):
-#         self.id = id
-#         self.start = start
-#         self.end = end
-#
-#     def __str__(self):
-#         return f"{self.id} {self.start} {self.end}"
-#
-#     def __repr__(self):
-#         return self.__str__()
-#
-#     def __hash__(self):
-#         return hash(self.__str__())
-#
-#     def __eq__(self, other):
-#         return self.id == other.id
-
-
 class Boundary:
     """
     This class represent the whole area
